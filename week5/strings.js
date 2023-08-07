@@ -27,7 +27,7 @@
         function add ()
         {return 2+1;}
 
-        console.log('The function says ${hey()}');
+        console.log(`The function says ${hey()}`);
         //constructing strings with variables
         const ourName = "freeCodeCamp";
         const ourStr2 = "Hello, our name is " + ourName + ", how are you?";
