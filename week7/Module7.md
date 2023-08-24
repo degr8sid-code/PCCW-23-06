@@ -19,8 +19,33 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 - Enter the name of the file when prompted
 
 ### Add SSH Key to Agent
-
 - Check if the agent is running
 ```
 eval "$(ssh-agent -s)"
 ```
+- If you are using Mac, add the following lines in the config file ($ cat config):
+```
+Host *
+ AddKeysToAgent yes 
+ UseKeychain yes
+ IdentityFile ~/.ssh/your_key_file_name
+```
+- Then execute the following command in the terminal:
+```
+ssh-add -K ~/.ssh/your_key_file_name
+```
+- Next, execute:
+```
+cat your_key_file_name.pub
+```
+- Copy the public key content and paste it in GitHub > Settings > SSH and GPG Keys > New SSH Key and add:
+ - title: your_key_file_name
+ - Key: paste the entire key content
+- Press ** Add SSH Key **
+
+### How GitHub and Git Work
+Some visual representations to help you understand GitHub and Git workflow:
+
+![Basic of Git and GitHub](https://miro.medium.com/v2/resize:fit:1400/1*irvoqLol7t-EPNzZN6CSnA.png)
+
+### VS Code GitHub Integration
