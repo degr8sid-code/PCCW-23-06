@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <div>
+            <h1 id="tag1">Hello Earthling</h1>
+        </div>
+    </body>
+    <script>
+       window.onload () = function () {
+        const tag = document.getElementById("tag1");
+        var time = 100;
+        //function to get time
+        const getTime = () => {
+            time = time-1;
+
+        }
+        tag.innerHTML = "Goodbye Aliens. Your ship leaves in: " + time + "Seconds";
+        setInterval(getTime, 500);
+       }
+       
+    </script>
+</html>

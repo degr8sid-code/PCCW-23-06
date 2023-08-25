@@ -71,4 +71,18 @@ _Note: The GitHub extension might be depreciated. You can try **GitHub Pull Requ
 
 ### Write Your First Test
 * Clone the [repository](https://github.com/kogsio/greeting).
-* Navigate to the directory and run: `npm test`
+* Navigate to the directory and run `npm install` to install the required dependencies.
+* Run: `npm test`.
+
+### How HTTP and WWW Works
+* Understanding the flow of HTTP
+![Understanding the flow of HTTP](https://miro.medium.com/v2/resize:fit:1400/1*6HVQfiRwxSg7Y5yo3rGWlQ.png)
+
+### DOM in JS
+![JavaScript HTML DOM](https://www.w3schools.com/js/pic_htmltree.gif)
+* If we add the internal script before `<body>` tag, then it might give error in the console section.
+* To avoid this, we can wrap it in `window.load()`.
+
+### PacMan Exercise
+* a Factory that can produce a lot of PacMen.
+* Each PacMan should have keep track of its position and velocity.
