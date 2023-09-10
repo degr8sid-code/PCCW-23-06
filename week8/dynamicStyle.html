@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>simple style example</title>
+
+    <script>
+      function alterStyle(elem) {
+        elem.style.background = "green";
+      }
+
+      function resetStyle(elemId) {
+        const elem = document.getElementById(elemId);
+        elem.style.background = "white";
+      }
+    </script>
+    <style>
+      #p1 {
+        border: solid blue 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- passes a reference to the element's object as parameter 'this'. -->
+    <p id="p1" onclick="alterStyle(this);">
+      Click here to change background color.
+    </p>
+
+    <!-- passes the 'p1' id of another element's style to modify. -->
+    <button onclick="resetStyle('p1');">Reset background color</button>
+  </body>
+</html>
