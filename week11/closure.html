@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Example</title>
+</head>
+<body>
+    <h1>Counter</h1>
+    <p>Count: <span id="count-display">0</span></p>
+    <button id="increment-button">Increment</button>
+    <button id="decrement-button">Decrement</button>
+
+    <script>
+        // JavaScript code from the previous example goes here
+        function createCounter() {
+          let count = 0; // This variable is in the closure
+        
+          function increment() {
+            count++;
+            document.getElementById('count-display').textContent = count;
+          }
+        
+          function decrement() {
+            count--;
+            document.getElementById('count-display').textContent = count;
+          }
+        
+          return { increment, decrement };
+        }
+        
+        const counter = createCounter();
+        
+        document.getElementById('increment-button').addEventListener('click', counter.increment);
+        document.getElementById('decrement-button').addEventListener('click', counter.decrement);
+    </script>
+</body>
+</html>

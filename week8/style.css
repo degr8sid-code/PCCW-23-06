@@ -1,0 +1,18 @@
+.image {
+    width: 400px;
+    margin: auto;
+  }
+  
+  #container {
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid black;
+    width: 600px;
+  }
+  
+  body {
+    text-align: center;
+    font-family: "Otomanopee One", sans-serif;
+  }
+  

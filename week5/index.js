@@ -1,4 +1,3 @@
-
 // index.js
 const { people, sayHi } = require("./module.js");
    

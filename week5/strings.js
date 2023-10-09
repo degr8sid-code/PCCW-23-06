@@ -18,7 +18,7 @@
         console.log(A.toLocaleLowerCase());
 
         //string template literals
-        console.log('I am ${2+3} years old');
+        console.log(`I am ${2+3} years old`);
 
         //string backticks
         function hey ()

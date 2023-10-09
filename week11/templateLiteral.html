@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+    <div id="product-container"></div>
+
+    <script>
+        const productName = 'Awesome Widget';
+        const productPrice = 19.99;
+        const productDescription = 'The Awesome Widget is the ultimate gadget for your everyday needs. It comes with a wide range of features to make your life easier.';
+
+        const productHTML = `
+            <div class="product">
+                <h2>${productName}</h2>
+                <p class="description">${productDescription}</p>
+                <p class="price">$${productPrice.toFixed(2)}</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        `;
+
+        // Insert the productHTML into the product-container div
+        const productContainer = document.getElementById('product-container');
+        productContainer.innerHTML = productHTML;
+    </script>
+</body>
+</html>

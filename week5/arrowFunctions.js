@@ -9,7 +9,7 @@ let addNew = function (a,b) {
 }
 // 3. arrow function with argument
 let addOther = (a,b) => a + b;
-
+addOther(2,4)
 // 4. a more syntactic way to write this function
 const myFunc = () => "value";
 
